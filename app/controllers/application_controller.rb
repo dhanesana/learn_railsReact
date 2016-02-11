@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   # Render 401 Error
   def authentication_error
     # User's token is either invalid or not in the right format
-    render json: {error: t('unauthorized')}, status 401 # Authentication timeout
+    render json: { error: t('unauthorized') }, status: 401 # Authentication timeout
   end
 
   # Prevent CSRF attacks by raising an exception.

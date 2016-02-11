@@ -19,7 +19,7 @@ module V1
 
     def invalid_login_attempt
       warden.custom_failure!
-      render json: { error: t('sessions_controller.invalid_login_attempt') }
+      render json: {error: t('sessions_controller.invalid_login_attempt')}
     end
 
   end
